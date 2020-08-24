@@ -1,11 +1,11 @@
 version: "3.7"
 services:
   urlwatch:
+    build: ./
     restart: always
     container_name: urlwatch
-    build:
-      context: .
-      args:
-        INTERVAL_CRON: "*/5 * * * *"
+    environment:
+      # e.g. every 5 minutes
+      INTERVAL_CRON: "*/5 * * * *"
     volumes:
       - ${PWD}/config:/root/.urlwatch/config
