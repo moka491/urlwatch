@@ -8,4 +8,4 @@ services:
       # e.g. every 5 minutes
       INTERVAL_CRON: "*/5 * * * *"
     volumes:
-      - ${PWD}/config:/root/.urlwatch/config
+      - ./config:/root/.urlwatch/config
