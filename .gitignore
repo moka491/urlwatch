@@ -1,6 +1,7 @@
 __pycache__
 .idea
 build
+.env
 
 config/urls.yaml
 config/urlwatch.yaml
