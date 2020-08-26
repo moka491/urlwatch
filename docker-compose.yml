@@ -4,6 +4,6 @@ services:
     build: ./
     restart: always
     container_name: urlwatch
-    env_file: .env
     volumes:
-      - ./config:/root/.urlwatch/config
+      - ./config/urls.yaml:/root/.urlwatch/urls.yaml
+      - ./config/urlwatch.yaml:/root/.urlwatch/urlwatch.yaml
